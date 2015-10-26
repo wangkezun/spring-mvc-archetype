@@ -7,12 +7,15 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Created by wangkezun on 15/10/26.
+ * Just a hello world controller
  */
 @Controller
 @RequestMapping("/")
 public class MainController {
     @RequestMapping(value = {"/","/index.htm","/index.html"},method = RequestMethod.GET)
     public ModelAndView index() {
-        return new ModelAndView("index");
+        ModelAndView mav = new ModelAndView("index");
+        mav.addObject("str","Hello, world!");
+        return mav;
     }
 }
