@@ -4,7 +4,7 @@
     <groupId>com.wkz</groupId>
     <artifactId>spring-mvc-archetype</artifactId>
     <packaging>maven-archetype</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0-RELEASE</version>
     <name>spring-mvc-archetype</name>
 
     <properties>
