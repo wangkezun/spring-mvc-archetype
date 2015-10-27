@@ -1,4 +1,4 @@
-package com.wangkezun.controller;
+package ${package}.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,11 +18,7 @@ import java.util.Map;
 public class MainController {
     @RequestMapping(value = {"/","/index.htm","/index.html"},method = RequestMethod.GET)
     @ResponseBody
-    public Map<String,Object> index() {
-        ModelAndView mav = new ModelAndView("index");
-        mav.addObject("str","Hello, world!");
-        Map<String, Object> map = new HashMap<>();
-        map.put("a","Hello, world!");
-        return map;
+    public String index() {
+        return "Hello,world!";
     }
 }
