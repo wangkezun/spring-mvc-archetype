@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by wangkezun on 15/10/26.
  * Just a hello world controller
  */
 @Controller
